@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendifyWeb - Real-time Trending Topics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TrendifyWeb</div>
+        <div class="language-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Real-time Trending Topics</h1>
+        <p class="subtitle">Global conversations updated every 5 minutes</p>
+        
+        <div class="trend-container" id="trendContainer">
+            <!-- Trends will be populated here by JavaScript -->
+        </div>
+
+        <div class="update-info">
+            <span id="lastUpdate">Last updated: 5 minutes ago</span>
+            <button id="refreshBtn">Refresh Now</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 TrendifyWeb - Cutting through the noise of misinformation</p>
+        <p>Powered by Twitter, Reddit, and News APIs</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
